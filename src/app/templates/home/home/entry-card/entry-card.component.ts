@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntryCardComponent implements OnInit {
 
-  public entradas: Array<string> = ['Angular - Rutas & Navegación', 'Angular - Componentes', 'Angular - HttpClient', 'Angular - Directivas de estructura'];
+  public entradas: Array<string> = ['Spring - MVC', 'Spring - Security Auth0 2','Spring - Data JPA','Angular - Rutas & Navegación', 'Angular - Componentes', 'Angular - HttpClient', 'Angular - Directivas de estructura'];
 
   constructor() { }
 

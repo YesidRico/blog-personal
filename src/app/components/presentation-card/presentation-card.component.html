@@ -8,15 +8,23 @@
 
   <mat-card-footer>
     <div class="row">
-      <fa-layers [fixedWidth]="true" [size]="iconSize">
-        <fa-icon [icon]="faIcon.faFacebook"></fa-icon>
-      </fa-layers>
-      <fa-layers [fixedWidth]="true" [size]="iconSize">
-        <fa-icon [icon]="faIcon.faLinkedin"></fa-icon>
-      </fa-layers>
-      <fa-layers [fixedWidth]="true" [size]="iconSize">
-        <fa-icon [icon]="faIcon.faGithub"></fa-icon>
-      </fa-layers>
+      <a class="social-icons" target="_black" href="https://www.facebook.com/fyrico">
+        <fa-layers [fixedWidth]="true" [size]="iconSize">
+          <fa-icon [icon]="faIcon.faFacebook"></fa-icon>
+        </fa-layers>
+      </a>
+      <a class="social-icons" target="_blank" href="https://www.linkedin.com/in/yesidrico/">
+        <fa-layers [fixedWidth]="true" [size]="iconSize">
+          <fa-icon [icon]="faIcon.faLinkedin"></fa-icon>
+        </fa-layers>
+      </a>
+
+      <a class="social-icons" target="_blank" href="https://github.com/YesidRico">
+        <fa-layers [fixedWidth]="true" [size]="iconSize">
+          <fa-icon [icon]="faIcon.faGithub"></fa-icon>
+        </fa-layers>
+      </a>
+
     </div>
   </mat-card-footer>
 </mat-card>
