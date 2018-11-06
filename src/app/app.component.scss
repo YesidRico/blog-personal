@@ -1,0 +1,24 @@
+.mat-toolbar{
+    background-color: transparent;
+}
+.toolbar-news-row{
+    max-height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #426FFE;
+}
+
+.sidenav-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E9EBF2;
+}
+
+.sidenav{
+    position: fixed;
+    width: 100%;
+}

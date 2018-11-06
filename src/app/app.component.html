@@ -1,0 +1,45 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content class="sidenav-content">
+    <mat-toolbar>
+      <mat-toolbar-row class="toolbar-news-row">
+        <span class="text-uppercase">Este blog aún esta en desarrollo</span>
+      </mat-toolbar-row>
+      <mat-toolbar-row *ngIf="isMovil">
+        <span class="space"></span>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-sidenav #sidenav mode="over" class="sidenav">
+      <mat-toolbar>
+        <span class="space"></span>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-toolbar>
+      <app-presentation-card></app-presentation-card>
+      <app-skills-card></app-skills-card>
+      <app-user-message-card></app-user-message-card>
+    </mat-sidenav>
+
+    <main class="container mt-1">
+      <div class="row">
+        <div class="col-lg-3" *ngIf="!isMovil">
+          <app-presentation-card></app-presentation-card>
+          <app-skills-card></app-skills-card>
+          <app-user-message-card></app-user-message-card>
+        </div>
+        <div class="col-lg-6">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="col-lg-3">
+          <app-subscribe-card></app-subscribe-card>
+          <app-latest-guides-card></app-latest-guides-card>
+        </div>
+      </div>
+    </main>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,16 @@
+.avatar{
+    max-height: 180px;
+    border-radius: 100%;
+}
+
+.mat-card-header, .mat-card-footer{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    line-height: 0;
+}
+
+.mat-card-footer{
+    margin: auto;
+}
+

@@ -1,9 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/scss/theme/variables";
+@import "assets/scss/utils";
 
 html, body { height: 100%; }
 body { 
     margin: 0;
     background-color: $blg-ligth-gray;;
     font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.mat-card:not([class*=mat-elevation-z]){
+    box-shadow: none;
+}
+
+.mat-card{
+    border-radius: 25px !important;
+}
+
+form{
+    width: 100%;
+}
+
+.form-field{
+    width: 100%;
+}
+
+.post-title{
+    text-decoration: none;
+    color: #4C84FF;
 }

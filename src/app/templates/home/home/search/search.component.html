@@ -1,0 +1,21 @@
+<mat-card class="mt-1">
+  <mat-card-content>
+    <form>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Buscar ej: Angular, Java, Hibernate, Spring framework ...</mat-label>
+        <input type="text" placeholder="Buscar" matInput [matAutocomplete]="auto" />
+        <mat-icon matSuffix>search</mat-icon>
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option>Angular routes</mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Categorías" multiple>
+          <mat-option>Backend</mat-option>
+          <mat-option>Frontend</mat-option>
+          <mat-option>Móvil</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+</mat-card>
